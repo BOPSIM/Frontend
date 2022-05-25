@@ -22,11 +22,6 @@ function LoginForm() {
   );
 }
 
-const A = styled.a`
-  color: #f64f00;
-  font-weight: 600;
-`;
-
 const Container = styled.div`
   margin-top: 100px;
   padding-top: 20px;
@@ -40,11 +35,17 @@ const Input = styled.input`
   width: 446px;
   height: 50px;
   margin: auto;
+  margin-bottom: 18px;
   padding: 5px 45px 5px 20px;
   border: solid 1px #f64f00;
   border-radius: 30px;
   background: #fff;
   box-sizing: border-box;
+`;
+
+const A = styled.a`
+  color: #f64f00;
+  font-weight: 600;
 `;
 
 const Button = styled.div`
@@ -55,6 +56,7 @@ const Button = styled.div`
   width: 446px;
   height: 60px;
   margin: auto;
+  margin-top: 10px;
   cursor: pointer;
   text-align: center;
   color: #fff;
