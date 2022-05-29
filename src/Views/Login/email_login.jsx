@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-function LoginForm() {
+function EmailLogin() {
   return (
     <Container>
       <Input
@@ -17,20 +17,19 @@ function LoginForm() {
         placeholder="비밀번호를 입력해주세요"
       />
       <A href="#">아직 회원이 아니신가요?</A>
-      <Button>이메일로 로그인하기</Button>
+      <Button type="submit">이메일로 로그인하기</Button>
     </Container>
   );
 }
 
 const Container = styled.div`
-  margin-top: 100px;
+  // margin-top: 100px;
   padding-top: 20px;
   text-align: center;
 `;
 
 const Input = styled.input`
   display: block;
-  position: relative;
   overflow: hidden;
   width: 446px;
   height: 50px;
@@ -41,11 +40,13 @@ const Input = styled.input`
   border-radius: 30px;
   background: #fff;
   box-sizing: border-box;
+  postion: absolute;
 `;
 
 const A = styled.a`
   color: #f64f00;
   font-weight: 600;
+  postion: absolute;
 `;
 
 const Button = styled.div`
@@ -63,6 +64,7 @@ const Button = styled.div`
   border: none;
   border-radius: 30px;
   background-color: #f64f00;
+  postion: absolute;
   ${({ disabled }) =>
     disabled &&
     `
@@ -70,4 +72,4 @@ const Button = styled.div`
   `}
 `;
 
-export default LoginForm;
+export default EmailLogin;
