@@ -1,12 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import main_logo from "/Users/juhee/Frontend/src/images/main_logo.png";
-import LOGIN from "/Users/juhee/Frontend/src/images/LOGIN.png";
-import EmailLogin from "Views/Login/email_login";
-import KakaoLogin from "Views/Login/kakao_login";
+import SIGNIN from "/Users/juhee/Frontend/src/images/SIGN IN.png";
+import EmailSignUp from "Views/Login/email_signup";
+import KakaoSignUp from "Views/Login/kakao_signup";
 import login_bg from "images/login_bg.png";
 
-function LoginForm() {
+function SignUp() {
   return (
     <>
       <Container>
@@ -19,17 +18,19 @@ function LoginForm() {
             margin: "0 auto",
           }}
         >
-          <img
-            src={main_logo}
-            alt="bopsim logo"
-            style={{ display: "block", marginBottom: "22px" }}
-          />
-          <img
-            src={LOGIN}
-            alt="login copy"
-            style={{ display: "block", marginBottom: "0px" }}
-          />
-          {KakaoLogin()}
+          <img src={SIGNIN} alt="signin copy" style={{ display: "block" }} />
+          <h1
+            style={{
+              color: "#F64F00",
+              fontSize: "24px",
+              marginTop: "30px",
+              display: "block",
+              marginLeft: "-270px",
+            }}
+          >
+            아직 회원이 아니신가요?
+          </h1>
+          {KakaoSignUp()}
           <hr
             style={{
               marginTop: 40,
@@ -37,10 +38,8 @@ function LoginForm() {
               width: 450,
             }}
           ></hr>
-          {EmailLogin()}
+          {EmailSignUp()}
         </div>
-        <script type="text/javascript" src="email_condition.js"></script>{" "}
-        {/*email condition 자바스크립트 연결*/}
       </Container>
       <img
         src={login_bg}
@@ -65,4 +64,4 @@ const Container = styled.div`
   text-align: center;
 `;
 
-export default LoginForm;
+export default SignUp;

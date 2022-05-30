@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-function EmailLogin() {
+function EmailSignUp() {
   return (
     <form
       action="/Users/juhee/Frontend/src/Views/Login/index.jsx"
@@ -14,35 +14,19 @@ function EmailLogin() {
           name="username"
           type="email"
           placeholder="이메일 주소를 입력해주세요"
-          // value={username_inputValue}
         />
         <Input
           id="password"
           name="password"
           type="password"
           placeholder="비밀번호를 입력해주세요"
-          // value={password_inputValue}
         />
-        <A href="signup">아직 회원이 아니신가요?</A>
-        <Button type="submit" id="login_btn">
-          이메일로 로그인하기
-        </Button>
+        <A href="#">비밀번호 찾기</A>
+        <Button type="submit">이메일로 회원가입 하기</Button>
       </Container>
-      <script type="text/javascript" src="email_condition.js"></script>
     </form>
   );
 }
-
-// const isActiveLogin = () => {
-//   let idValue = username_inputValue;
-//   let pwValue = password_inputValue;
-
-//   if (idValue && pwValue && pwValue.length > 4) {
-//     login_btn.classList.add("login_active");
-//   } else {
-//     login_btn.classList.remove("login_active");
-//   }
-// };
 
 const Container = styled.div`
   padding-top: 20px;
@@ -96,4 +80,4 @@ const Button = styled.div`
   `}
 `;
 
-export default EmailLogin;
+export default EmailSignUp;

@@ -24,7 +24,7 @@ export default function KakaoLogin() {
             marginTop: 20,
           }}
         >
-          카카오로 로그인하기
+          카카오로 로그인 하기
         </p>
       </Button>
     </>
