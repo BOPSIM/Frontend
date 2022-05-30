@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import main_logo from "/Users/juhee/Frontend/src/images/main_logo.png";
 import Hi from "/Users/juhee/Frontend/src/images/Hi.png";
+import white_arrow from "/Users/juhee/Frontend/src/images/white_arrow.png";
 import login_bg from "images/login_bg.png";
 
 function SignSucceed() {
@@ -86,6 +87,16 @@ function SignSucceed() {
                 postion: "absolute",
               }}
             >
+              <img
+                src={white_arrow}
+                alt="white_arrow"
+                style={{
+                  width: "20px",
+                  marginLeft: "-10px",
+                  marginRight: "15px",
+                  marginBottom: "-5px",
+                }}
+              ></img>
               로그인 하기
             </button>
           </a>

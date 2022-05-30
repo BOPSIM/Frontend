@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import white_arrow from "/Users/juhee/Frontend/src/images/white_arrow.png";
 
 function EmailSignUp() {
   return (
@@ -22,7 +23,19 @@ function EmailSignUp() {
           placeholder="비밀번호를 입력해주세요"
         />
         <A href="#">비밀번호 찾기</A>
-        <Button type="submit">이메일로 회원가입 하기</Button>
+        <Button type="submit">
+          <img
+            src={white_arrow}
+            alt="white_arrow"
+            style={{
+              width: "20px",
+              marginLeft: "-10px",
+              marginRight: "15px",
+              marginBottom: "-5px",
+            }}
+          ></img>
+          이메일로 회원가입 하기
+        </Button>
       </Container>
     </form>
   );
