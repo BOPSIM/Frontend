@@ -33,21 +33,20 @@ function LoginForm() {
           <hr
             style={{
               marginTop: 40,
-              marginBottom: 20,
+              marginBottom: 40,
               width: 450,
             }}
           ></hr>
           {EmailLogin()}
         </div>
         <script type="text/javascript" src="email_condition.js"></script>{" "}
-        {/*email condition 자바스크립트 연결*/}
       </Container>
       <img
         src={login_bg}
         alt="background"
         style={{
           width: "100%",
-          height: "950px",
+          height: "1000px",
           position: "absolute",
           top: 0,
           left: 0,

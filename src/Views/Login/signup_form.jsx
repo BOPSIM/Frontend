@@ -46,7 +46,7 @@ function SignUp() {
         alt="background"
         style={{
           width: "100%",
-          height: "950px",
+          height: "1000px",
           position: "absolute",
           top: 0,
           left: 0,
