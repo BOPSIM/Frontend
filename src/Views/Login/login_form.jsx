@@ -39,7 +39,6 @@ function LoginForm() {
           ></hr>
           {EmailLogin()}
         </div>
-        <script type="text/javascript" src="email_condition.js"></script>{" "}
       </Container>
       <img
         src={login_bg}

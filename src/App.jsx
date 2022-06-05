@@ -7,7 +7,15 @@ import SignSucceed from "Views/Login/signup_succeed";
 
 function App() {
   return (
-    <div className="App">
+    <div
+      className="App"
+      style={{
+        marginLeft: -10,
+        marginTop: -10,
+        marginRight: 0,
+        marginBottom: 0,
+      }}
+    >
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login />} />
