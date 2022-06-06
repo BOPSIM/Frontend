@@ -85,9 +85,9 @@ function EmailLogin() {
           필수 입력 사항입니다.
         </p>
       )}
-      <input
+
+      <button
         type="submit"
-        value="이메일로 로그인하기"
         style={{
           fontSize: 16,
           fontWeight: 600,
@@ -105,7 +105,10 @@ function EmailLogin() {
           borderRadius: 30,
           backgroundColor: "#f64f00",
         }}
-      ></input>
+      >
+        이메일로 로그인하기
+      </button>
+
       <A href="#">비밀번호 찾기</A>
       <span
         className="v-line"
